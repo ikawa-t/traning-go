@@ -1,0 +1,44 @@
+--------------------------------------------------
+0.41s    7856 https://golang.org
+0.52s    4146 http://gopl.io
+0.58s    6372 https://godoc.org
+--------------------------------------------------
+0.25s    7856 https://golang.org
+0.56s    4146 http://gopl.io
+0.74s    6372 https://godoc.org
+--------------------------------------------------
+0.25s    7856 https://golang.org
+0.28s    4146 http://gopl.io
+0.73s    6372 https://godoc.org
+--------------------------------------------------
+0.40s    7856 https://golang.org
+0.61s    4146 http://gopl.io
+0.62s    6372 https://godoc.org
+--------------------------------------------------
+0.28s    7856 https://golang.org
+0.59s    4146 http://gopl.io
+0.80s    6372 https://godoc.org
+--------------------------------------------------
+0.06s    1062 http://https://godoc.org
+0.06s    1064 http://https://golang.org
+0.68s    4146 http://gopl.io
+--------------------------------------------------
+0.39s   21329 http://Google.co.in
+--------------------------------------------------
+0.26s   19403 http://Google.com
+0.49s   21329 http://Google.co.in
+1.57s  390223 http://Youtube.com
+1.75s  396315 http://Yahoo.com
+1.85s   72524 http://Facebook.com
+1.94s   54537 http://Wikipedia.org
+2.89s  213485 http://Amazon.com
+--------------------------------------------------
+0.13s      81 http://Baidu.com
+0.24s   19435 http://Google.com
+0.80s   21304 http://Google.co.in
+1.47s  356998 http://Youtube.com
+1.81s  617017 http://Qq.com
+1.94s  391841 http://Yahoo.com
+1.97s   72843 http://Facebook.com
+2.04s   54537 http://Wikipedia.org
+5.40s  214841 http://Amazon.com
