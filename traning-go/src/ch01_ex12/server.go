@@ -1,7 +1,7 @@
 package main
 
 import (
-	"ch01_ex05/lissajous"
+	"./lissajous"
 	"fmt"
 	"log"
 	"net/http"
@@ -29,9 +29,14 @@ func handler(w http.ResponseWriter, r *http.Request) {
 	if err := r.ParseForm(); err != nil {
 		log.Print(err)
 	}
+	var cycles float64
 	for k, v := range r.Form {
 		fmt.Fprintf(w, "Form[%q] = %q\n", k, v)
+		if k == "cycles" {
+			fmt.Fprintf(w, "cycles = %q\n", v)
+		}
 	}
+	lissajous.Lissajous(w, cycles)
 }
 
 func counter(w http.ResponseWriter, r *http.Request) {

@@ -1,4 +1,4 @@
-package lissajous
+package main
 
 import (
 	"image"
@@ -18,10 +18,10 @@ const (
 	blackIndex = 1 // パレットの次の色
 )
 
-//func main() {
-//	rand.Seed(time.Now().UTC().UnixNano())
-//	lissajous(os.Stdout)
-//}
+func main() {
+	rand.Seed(time.Now().UTC().UnixNano())
+	lissajous(os.Stdout)
+}
 
 func Lissajous(out io.Writer) {
 	const (
