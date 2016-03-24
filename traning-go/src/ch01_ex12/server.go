@@ -1,7 +1,7 @@
 package main
 
 import (
-	"./lissajous"
+	"ch01_ex12/lissajous"
 	"fmt"
 	"log"
 	"net/http"
@@ -25,7 +25,8 @@ func handler(w http.ResponseWriter, r *http.Request) {
 		fmt.Fprintf(w, "Header[%q] = %q\n", k, v)
 	}
 	fmt.Fprintf(w, "Host = %q\n", r.Host)
-	fmt.Fprintf(w, "RemoteAddr = %q\n", r.RemoteAddr)
+	//fmt.Fprintf(w, "RemoteAddr = %q\n", r.RemoteAddr)
+	fmt.Fprintf(w, "Lissajou!!!!!!!!s")
 	if err := r.ParseForm(); err != nil {
 		log.Print(err)
 	}
@@ -36,7 +37,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
 			fmt.Fprintf(w, "cycles = %q\n", v)
 		}
 	}
-	lissajous.Lissajous(w, cycles)
+	lissajous.Lissajous(w,cycles)
 }
 
 func counter(w http.ResponseWriter, r *http.Request) {
@@ -47,5 +48,5 @@ func counter(w http.ResponseWriter, r *http.Request) {
 
 func liss(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintf(w, "lissajous\n")
-	lissajous.Lissajous(w)
+	//lissajous.Lissajous(w)
 }

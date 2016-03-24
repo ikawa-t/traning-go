@@ -15,8 +15,8 @@ import (
 // hogehoge.com Google.com Facebook.com Youtube.com Baidu.com Yahoo.com Amazon.com Wikipedia.org Qq.com Google.co.in
 
 func main() {
-	os.Setenv("HTTP_PROXY", "http://p000480075:takoika18@proxy.ricoh.co.jp:8080")
-	os.Setenv("HTTPS_PROXY", "http://p000480075:takoika18@proxy.ricoh.co.jp:8080")
+	os.Setenv("HTTP_PROXY", "http://p000480075:********@proxy.ricoh.co.jp:8080")
+	os.Setenv("HTTPS_PROXY", "http://p000480075:********@proxy.ricoh.co.jp:8080")
 
 	userFile := "data/out.txt"
 	file, err := os.OpenFile(userFile, os.O_WRONLY|os.O_CREATE|os.O_APPEND, 0600)

@@ -10,8 +10,8 @@ import (
 )
 
 func main() {
-	os.Setenv("HTTP_PROXY", "http://user:password@proxy.ricoh.co.jp:8080")
-	os.Setenv("HTTPS_PROXY", "http://user:password@proxy.ricoh.co.jp:8080")
+	os.Setenv("HTTP_PROXY", "http://p000480075:********@proxy.ricoh.co.jp:8080")
+	os.Setenv("HTTPS_PROXY", "http://p000480075:********@proxy.ricoh.co.jp:8080")
 
 	for _, url := range os.Args[1:] {
 		resp, err := http.Get(url)

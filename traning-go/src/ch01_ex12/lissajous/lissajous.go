@@ -7,8 +7,6 @@ import (
 	"io"
 	"math"
 	"math/rand"
-	"os"
-	//"time"
 )
 
 var palette = []color.Color{color.Black, color.RGBA{0x00, 0xff, 0x00, 0xff}}
@@ -17,11 +15,6 @@ const (
 	whiteIndex = 0 // パレットの最初の色
 	blackIndex = 1 // パレットの次の色
 )
-
-//func main() {
-//	rand.Seed(time.Now().UTC().UnixNano())
-//	lissajous(os.Stdout)
-//}
 
 func Lissajous(out io.Writer, cycles float64) {
 	const (
@@ -49,10 +42,6 @@ func Lissajous(out io.Writer, cycles float64) {
 		anim.Image = append(anim.Image, img)
 	}
 
-	//標準出力だと文字化けして正しく表示されなかった
-	//gif.EncodeAll(out, &anim) // 注意: エンコードエラーを無視
-	//ファイル出力
-	f, _ := os.OpenFile("data/lissajous_ex5.gif", os.O_WRONLY|os.O_CREATE, 0600)
-	defer f.Close()
-	gif.EncodeAll(f, &anim)
+	//文字化けして正しく表示されなかった
+	gif.EncodeAll(out, &anim) // 注意: エンコードエラーを無視
 }

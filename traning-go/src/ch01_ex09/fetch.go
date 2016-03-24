@@ -11,8 +11,8 @@ import (
 )
 
 func main() {
-	os.Setenv("HTTP_PROXY", "http://p000480075:takoika18@proxy.ricoh.co.jp:8080")
-	os.Setenv("HTTPS_PROXY", "http://p000480075:takoika18@proxy.ricoh.co.jp:8080")
+	os.Setenv("HTTP_PROXY", "http://p000480075:********@proxy.ricoh.co.jp:8080")
+	os.Setenv("HTTPS_PROXY", "http://p000480075:********@proxy.ricoh.co.jp:8080")
 
 	for _, url := range os.Args[1:] {
 		// 接頭辞がなければ追加
